@@ -1,0 +1,147 @@
+--- Symbol List (sorted by symbol)
+1.clear                  f006              (R )
+3.clear                  f874              (R )
+abuff                    00a2              (R )
+AUDC0                    0015                  
+AUDC1                    0016                  
+AUDF0                    0017                  
+AUDF1                    0018                  
+AUDV0                    0019                  
+AUDV1                    001a                  
+charloop                 f258              (R )
+col0                     f400              (R )
+col1                     f430              (R )
+col2                     f460              (R )
+col3                     f490              (R )
+col4                     f4c0              (R )
+col5                     f4f0              (R )
+COLUBK                   0009              (R )
+COLUP0                   0006              (R )
+COLUP1                   0007              (R )
+COLUPF                   0008              (R )
+CTRLPF                   000a              (R )
+curselindex              00a4              (R )
+curseltextindex          00a3              (R )
+curstackpos              00ad              (R )
+curtextpos               00ac              (R )
+CXBLPF                   0006                  
+CXCLR                    002c                  
+CXM0FB                   0004                  
+CXM0P                    0000                  
+CXM1FB                   0005                  
+CXM1P                    0001                  
+CXP0FB                   0002                  
+CXP1FB                   0003                  
+CXPPMM                   0007                  
+drawImageLine            f202              (R )
+drawTextLine             f291              (R )
+ENABL                    001f                  
+ENAM0                    001d                  
+ENAM1                    001e                  
+endOS                    f0f7              (R )
+GAMECOUNT                000f              (R )
+GameLoop                 f061              (R )
+gameselection_high       00a6              (R )
+gameselection_low        00a5              (R )
+gameselectionarea        ffe0              (R )
+GAMEVIEWCOUNT            0008              (R )
+grafbuff                 00ab              (R )
+GRP0                     001b              (R )
+GRP1                     001c              (R )
+HMBL                     0024                  
+HMCLR                    002b                  
+HMM0                     0022                  
+HMM1                     0023                  
+HMOVE                    002a              (R )
+HMP0                     0020              (R )
+HMP1                     0021              (R )
+INPT0                    0008                  
+INPT1                    0009                  
+INPT2                    000a                  
+INPT3                    000b                  
+INPT4                    000c              (R )
+INPT5                    000d                  
+INTIM                    0284              (R )
+ionotdown                f0c0              (R )
+ionotup                  f0e4              (R )
+lastiostate              00ae              (R )
+logo                     f400                  
+lowerascii0              f5e0                  
+lowerfont0               f600              (R )
+lowerfont1               f63b              (R )
+lowerfont2               f676              (R )
+lowerfont3               f6b1              (R )
+lowerfont4               f6ec              (R )
+nofire                   f0f7              (R )
+noiochanged              f0e4              (R )
+notselected              f24e              (R )
+NUSIZ0                   0004              (R )
+NUSIZ1                   0005              (R )
+overscan                 f083              (R )
+PF0                      000d              (R )
+PF1                      000e              (R )
+PF2                      000f              (R )
+Picture                  f107              (R )
+pictureLoop              f10d              (R )
+printline                f141              (R )
+printText                f230              (R )
+REFP0                    000b                  
+REFP1                    000c                  
+RESBL                    0014                  
+resetvektor              fffc              (R )
+RESM0                    0012                  
+RESM1                    0013                  
+RESMP0                   0028                  
+RESMP1                   0029                  
+RESP0                    0010              (R )
+RESP1                    0011              (R )
+restarttoselection       f86e              (R )
+RSYNC                    0003                  
+ScanLoop                 f158              (R )
+showImage                f200              (R )
+spbuff                   00a8              (R )
+Start                    f000              (R )
+starttextline            00af              (R )
+SWACNT                   0281              (R )
+SWBCNT                   0283                  
+SWCHA                    0280              (R )
+SWCHB                    0282                  
+T1024T                   0297                  
+T1024TI                  029f                  
+tempx                    00aa              (R )
+text                     f300              (R )
+textcol0                 0099              (R )
+textcol1                 0094              (R )
+textcol2                 008f              (R )
+textcol3                 008a              (R )
+textcol4                 0085              (R )
+textcol5                 0080              (R )
+textcolz                 009e              (R )
+textline                 00a7              (R )
+TIA_BASE_ADDRESS         0000              (R )
+TIA_BASE_READ_ADDRESS    0000              (R )
+TIA_BASE_WRITE_ADDRESS   0000              (R )
+TIM1T                    0294                  
+TIM1TI                   029c                  
+TIM64T                   0296              (R )
+TIM64TI                  029e                  
+TIM8T                    0295                  
+TIM8TI                   029d                  
+TIMINT                   0285                  
+upperfont0               f727              (R )
+upperfont1               f762              (R )
+upperfont2               f79d              (R )
+upperfont3               f7d8              (R )
+upperfont4               f813              (R )
+VBLANK                   0001              (R )
+VBlank                   f082              (R )
+VDELBL                   0027                  
+VDELP0                   0025              (R )
+VDELP1                   0026              (R )
+VERSION_VCS              006a                  
+VSync                    f070              (R )
+VSYNC                    0000              (R )
+WSYNC                    0002              (R )
+xbuff                    00a0              (R )
+ybuff                    00a1              (R )
+--- End of Symbol List.
