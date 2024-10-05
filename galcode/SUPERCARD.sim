@@ -1,0 +1,60 @@
+%SIGNAL
+PIN   1 =  CLK 
+PIN   2 =  a0 
+PIN   3 =  a1 
+PIN   4 =  a2 
+PIN   5 =  a3 
+PIN   6 =  a4 
+PIN   7 =  a5 
+PIN   8 =  a6 
+PIN  17 = !a10_a12 
+PIN  18 = !a7_a9 
+PIN   9 = !a8_a11 
+PIN  15 =  bs0 
+PIN  16 =  bs1 
+PIN  14 =  bs2 
+PIN  13 =  bs3 
+PIN  19 =  clk_o 
+PIN  11 =  oe 
+PIN  12 = !oe_o 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+bs0.d  =>
+    a0
+
+bs1.d  =>
+    a1
+
+bs2.d  =>
+    a2
+
+bs3.d  =>
+    a3
+
+clk_o =>
+    !a4 & a5 & a6 & !a10_a12 & !a7_a9 & !a8_a11 & bs0 & bs1 & bs2 & bs3
+
+oe_o =>
+    !bs0 & !oe_o
+  # !bs1 & !oe_o
+  # !bs2 & !oe_o
+  # !bs3 & !oe_o
+  # !a0 & !a1 & a2 & a3 & a4 & a5 & a6 & !a10_a12 & !a7_a9 & !a8_a11
+
+a10_a12.oe  =>
+    0 
+
+a7_a9.oe  =>
+    0 
+
+clk_o.oe  =>
+    1 
+
+oe_o.oe  =>
+    1 
+
+%END

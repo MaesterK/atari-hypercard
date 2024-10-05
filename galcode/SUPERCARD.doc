@@ -1,0 +1,97 @@
+
+*******************************************************************************
+                                   supercard
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8ms  Library DLIB-h-40-11
+Created         Fri Feb 01 12:26:49 2019
+Name            supercard 
+Partno          00 
+Revision        01 
+Date            12/22/06 
+Designer        Me
+Company         None 
+Assembly        None 
+Location        
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+bs0.d  =>
+    a0
+
+bs1.d  =>
+    a1
+
+bs2.d  =>
+    a2
+
+bs3.d  =>
+    a3
+
+clk_o =>
+    !a4 & a5 & a6 & a10_a12 & a7_a9 & a8_a11 & bs0 & bs1 & bs2 & bs3
+
+oe_o =>
+    !bs0 & oe_o
+  # !bs1 & oe_o
+  # !bs2 & oe_o
+  # !bs3 & oe_o
+  # !a0 & !a1 & a2 & a3 & a4 & a5 & a6 & a10_a12 & a7_a9 & a8_a11
+
+a10_a12.oe  =>
+    0 
+
+a7_a9.oe  =>
+    0 
+
+clk_o.oe  =>
+    1 
+
+oe_o.oe  =>
+    1 
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    CLK                         1        V        -       -       -     
+    a0                          2        V        -       -       -     
+    a1                          3        V        -       -       -     
+    a2                          4        V        -       -       -     
+    a3                          5        V        -       -       -     
+    a4                          6        V        -       -       -     
+    a5                          7        V        -       -       -     
+    a6                          8        V        -       -       -     
+ !  a10_a12                     17       V        -       -       -     
+ !  a7_a9                       18       V        -       -       -     
+ !  a8_a11                      9        V        -       -       -     
+    bs0                         15       V        -       -       -     
+    bs0                 d       15       X        1       8       1     
+    bs1                         16       V        -       -       -     
+    bs1                 d       16       X        1       8       1     
+    bs2                         14       V        -       -       -     
+    bs2                 d       14       X        1       8       1     
+    bs3                         13       V        -       -       -     
+    bs3                 d       13       X        1       8       1     
+    clk_o                       19       V        1       7       1     
+    oe                          11       V        -       -       -     
+ !  oe_o                        12       V        5       7       1     
+    a10_a12             oe      17       D        1       1       0     
+    a7_a9               oe      18       D        1       1       0     
+    clk_o               oe      19       D        1       1       0     
+    oe_o                oe      12       D        1       1       0     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+

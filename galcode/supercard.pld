@@ -1,0 +1,79 @@
+Name     supercard ;
+PartNo   00 ;
+Date     12/22/06 ;
+Revision 01 ;
+Designer Me;
+Company  None ;
+Assembly None ;
+Location  ;
+Device   g16v8ms ;
+
+
+/* inputs */
+
+pin 1 = CLK;
+pin 11 = oe;
+
+/*
+pin 2 = a0;
+pin 3 = a1;
+pin 4 = a2;
+pin 5 = a3;
+pin 6 = a4;
+
+pin [2..6] = [a0..4];
+pin 7 = !a5_a6;
+pin 8 = !a7_a8;
+pin 9 = !a9_a10;
+pin 12 = !oe_o;
+pin 13 = a11;
+pin 14 = a12;
+pin [15..18] = [bs0..3];
+pin 19 = clk_o;
+*/
+/*
+pin [13..16] = [bs0..3];
+pin 7 = a11;
+pin 8 = a12;
+*/
+
+pin [2..8] = [a0..6];
+pin 17 = !a10_a12;
+pin 18 = !a7_a9;
+pin 9 = !a8_a11; 
+
+pin 12 = !oe_o;
+
+
+pin 13 =bs3;
+pin 14 =bs2;
+pin 15 =bs0;
+pin 16 =bs1;
+pin 19 = clk_o;
+
+
+
+/* outputs */
+
+
+
+/* logic */
+
+/* negiertes a12 fuer cs des flash 
+a12n = !a12;*/
+
+/* flipflops bei selectbereich setzem...solange nicht mehr defaultwert */
+/*clk_o= a4 & a5_a6 & (bs0 & bs1 & bs2 & bs3);*/
+clk_o= !a4 & a5 & a6 & a7_a9 & a8_a11 & a10_a12 & (bs0 & bs1 & bs2 & bs3);
+
+/* output der FFs bei resetvektor aktivieren und falls nicht default (alles high) an lassen */
+/* oe_o = (oe_o & !(bs0 & bs1 & bs2 &bs3)) # a9_a10; */
+oe_o = (oe_o & !(bs0 & bs1 & bs2 &bs3)) # (!a0 & !a1 & a2 & a3 & a4 & a5 & a6 & a7_a9 & a8_a11 & a10_a12 );
+
+
+/* */
+bs0.d = a0;
+bs1.d = a1;
+bs2.d = a2;
+bs3.d = a3;
+
